@@ -1,6 +1,6 @@
 import Accordion from 'accordion-js';
 
-const faq_accordion = new Accordion('.accordion-container', {
+const accordionFag = new Accordion('.faq-accordion-list', {
   duration: 400,
   showMultiple: true,
 });

@@ -1,0 +1,122 @@
+.faq-container {
+    padding-bottom: 64px;
+}
+.faq-title {
+    color: rgba(250, 250, 250, 0.4);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.5;
+
+    margin-bottom: 32px;
+}
+
+@media only screen and (min-width: 1440px) {
+    .faq-accordion-list {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+}
+
+.faq-accordion-item {
+    border-top: 1px solid rgba(250, 250, 250, 0.2);
+    padding: 20px 0;
+}
+.faq-accordion-item:last-child {
+    border-bottom: 1px solid rgba(250, 250, 250, 0.2);
+}
+@media only screen and (min-width: 768px) {  
+    .faq-accordion-item {
+        padding-top: 32px;
+        padding-bottom: 24px;
+    }
+}
+@media only screen and (min-width: 1440px) {
+    .faq-accordion-item {
+        border-right: 1px solid rgba(250, 250, 250, 0.2);
+        width: 50%;
+    }
+    .faq-accordion-item:nth-child(2n+1) {
+        padding-right: 32px;
+    }
+    .faq-accordion-item:nth-child(2n) {
+       border-right: none;
+       padding-left: 32px;
+    }
+}
+
+.faq-accordion-btn {
+    background-color: transparent;
+    width: 100%;
+
+    display: inline-flex;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.faq-accordion-question{
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.5;
+    letter-spacing: -0.03em;
+    text-align: start;
+}
+
+.faq-accordion-icon {
+    width: 34px;
+    height: 34px;
+    padding: 7px;
+    border: 1px solid rgba(250, 250, 250, 0.2);
+    border-radius: 50%;
+    stroke: currentColor;
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+   
+    transition: 300ms ease;
+    transition-property: transform, background-color;
+}
+@media only screen and (min-width: 768px) {  
+    .faq-accordion-icon {
+        width: 42px;
+        height: 42px;
+        padding: 10px;
+    }
+}
+.faq-accordion-icon:hover,
+.faq-accordion-icon:focus {
+   background-color: #fafafa33; 
+}
+
+.faq-accordion-answer {
+    color: rgba(250, 250, 250, 0.6);
+    line-height: 1.5;
+    margin-top: 16px;
+}
+
+/* accordion */
+.ac .ac-panel {
+    overflow: hidden;
+    transition-property: height, visibility;
+    transition-timing-function: ease;
+}
+
+.ac.js-enabled .ac-panel {
+    visibility: hidden;
+}
+
+.ac.is-active .ac-panel {
+    visibility: visible;
+}
+
+.ac.is-active .faq-accordion-icon {
+    transform: rotatez(180deg);
+}
+
+
+
+
+
+
