@@ -114,6 +114,7 @@
 .slide-content-link-js {
     background-color: #ed3b44;
     color: #fafafa;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.557);
     
     border-radius: 60px;
     padding: 13px 32px;
@@ -123,8 +124,7 @@
 
 .slide-content-link-js:hover,
 .slide-content-link-js:focus {
-    background-color: #e0373f;
-    color: #3b3b3b;
+    background-color:  #E0373F;
 }
 @media screen and (min-width: 768px) {
     .slide-content-link-js {

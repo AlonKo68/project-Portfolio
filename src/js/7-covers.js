@@ -1,4 +1,4 @@
-const section = document.querySelector('.covers');
+const section = document.querySelector('.covers-section');
 const observer = new IntersectionObserver(
   (entries, observer) => {
     entries.forEach(entry => {

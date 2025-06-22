@@ -3,7 +3,15 @@
         <!-- logo, title -->
         <div class="work-together-container-wrapper">
             <h2 class="work-together-title">
-                <img class="work-together-image" src="/img/work-together/logo.png" alt="Head icon" />
+                <a class="" href="./index.html" aria-label="site logo">
+                    <picture>
+                        <source srcset="
+                        /img/logo/logo@1x.webp 1x,
+                        /img/logo/logo@2x.webp 2x">
+                        <img class="work-together-image" src="/img/logo/logo@1x.webp" alt="logo" width="80" height="80"
+                            loading="lazy">
+                    </picture>
+                </a>
                 Let's <span class="title-accent">work</span>TOGETHER
             </h2>
         </div>
@@ -21,17 +29,22 @@
                 <span class="input-span comments-span-js"></span>
             </label>
 
-            <button class="form-btn" type="submit">Send</button>
-
+            <button class="form-btn" type="submit">
+                Send
+            </button>
         </form>
         <!-- address -->
         <address class="work-together-address">
             <ul class="address-list">
                 <li class="address-item email-js">
-                    <a class="address-link" href="mailto:lloydjefferson@gmail.com">lloydjefferson@gmail.com</a>
+                    <a class="address-link" href="mailto:lloydjefferson@gmail.com">
+                        lloydjefferson@gmail.com
+                    </a>
                 </li>
                 <li class="address-item phone-js">
-                    <a class="address-link" href="tel:+3801111111111">+380 11 1111 11 11</a>
+                    <a class="address-link" href="tel:+3801111111111">
+                        +380 11 1111 11 11
+                    </a>
                 </li>
             </ul>
         </address>

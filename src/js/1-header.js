@@ -10,15 +10,30 @@ function createMarkup (arr) {
 logoText.insertAdjacentHTML('afterbegin', createMarkup(text));
 
 //nav menu
+const navItems = ['About me', 'Benefits', 'Projects', 'FAQ'];
+const listNavMenu =document.querySelector('.nav-menu-list-js');
+function createMarkupMenu(arr) {
+  return arr.map((item) => 
+  ` <li class="nav-menu-item-js">
+        <a class="nav-menu-link-js" 
+          href="#${item.toLowerCase().replace(/\s+/g, '')}" 
+          aria-label="go to ${item.toLowerCase()} section">
+            ${item}
+        </a>
+    </li>`
+).join('')
+}
+listNavMenu.insertAdjacentHTML('afterbegin', createMarkupMenu(navItems))
+
+// open menu/nav
 const headerNavBtn =document.querySelector('.header-nav-btn');
 headerNavBtn.addEventListener('click', handleOpenMenu);
 
-let closeDelay;
+let closeDelay = null;
 function handleOpenMenu(e) {
   let menu;
   if (e.target.tagName === 'SPAN') {
-    menu = document.querySelector('.nav-menu-list');
-    console.log(menu);
+    menu = document.querySelector('.nav-menu-list-js');
     closeDelay = setTimeout(() => {
       menu.classList.toggle('menu-visible');
     }, 5000);
@@ -36,4 +51,5 @@ function handleCloseMenuMobile(e) {
     e.currentTarget.removeEventListener('click', handleCloseMenuMobile);
   }
 }
+
 

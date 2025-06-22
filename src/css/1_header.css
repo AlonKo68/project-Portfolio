@@ -1,5 +1,4 @@
 .header {
-    /* position: absolute; */
     position: relative;
     z-index: 10;
 }
@@ -10,7 +9,6 @@
     top: 0;
     left: 0;
     right: 0;
-
 }
 
 .header-nav {
@@ -33,6 +31,10 @@
     display: flex;
     gap: 8px;
     font-size: 20px;
+}
+.logo-img {
+    width: 80px;
+    height: 80px;
 }
 
 .logo-text-js {
@@ -70,6 +72,7 @@
 @media only screen and (min-width: 768px) {
     .header-nav-menu-btn {
         display: block;
+        margin: 10px;
 
         text-decoration: underline;
         user-select: none;
@@ -94,18 +97,18 @@
 }
 
 .order-btn {
-    background-color: #ed3b44;
+    background-color: #ED3B44;
     border-radius: 60px;
     transition: transform 200ms ease, background-color 200ms ease;
     height: fit-content;
     user-select: none;
-    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.557);
-    
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.557);
+   
     text-align: center;
     font-size: 14px;
 }
 .order-btn:hover {
-        background-color: #f02731;
+        background-color: #E0373F;
     }
 .order-btn:active {
     transform: scale(0.98);
@@ -153,9 +156,9 @@
         padding: 32px 16px 64px;
 
         background-image: image-set(
-            url(/img/1-header/bg@1x.webp) 1x,
-            url(/img/1-header/bg@2x.webp) 2x),
-            linear-gradient(to right, #C6E327 0%, #596808 34%, #1C1D20 50%, #1C1D20 100%);
+            url(/img/2-hero/bg_mob@1x.webp) 1x,
+            url(/img/2-hero/bg_mob@2x.webp) 2x),
+            linear-gradient(to right, #ed3b44 0%, #69292d 32.27%, #1c1d20 50.32%, #1c1d20 100%);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -219,7 +222,7 @@
     }
 }
 @media only screen and (min-width: 768px) {
-    .nav-menu-list {
+    .nav-menu-list-js {
         position: absolute;
         top: 50px;
         left: 50%;
@@ -239,23 +242,28 @@
         transform: translate(-50%, -50%) scaleY(0);
         transition: transform 200ms ease;
     }
-    .nav-menu-list.menu-visible {
+    .nav-menu-list-js.menu-visible {
         transform: translate(-50%, 0%) scaleY(100%);
     }
 }
 
 @media only screen and (min-width: 1440px) {
-    .nav-menu-list {
+    .nav-menu-list-js {
        left: 51%;
     }    
 }
 @media only screen and (min-width: 768px) {
-   .nav-menu-link {
+   .nav-menu-link-js {
         color: #FAFAFA;
         text-decoration: underline;
         user-select: none;
     }
-    .nav-menu-link:hover {
+    .nav-menu-link-js:hover {
         color: #ed3b44;
     }
 }
+
+
+/* .no-scroll {
+    overflow: hidden;
+} */

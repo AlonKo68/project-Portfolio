@@ -3,42 +3,25 @@
     height: 508px;
     overflow: hidden;
 
-    background-image: url(../img/covers/bg/coversbg_m@1x.webp);
+    background-image: image-set(
+        url(/img/7-covers/bg-mob@1x.webp) 1x,
+        url(/img/7-covers/bg-mob@2x.webp) 2x);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
-
-@media (min-resolution: 192dpi),
-(min-resolution: 2dppx) {
-    .covers-container {
-        background-image: url(../img/covers/bg/coversbg_m@2x.webp);
-    }
-}
-
 @media only screen and (min-width: 768px) {
     .covers-container {
-        height: 960px;
-        background-image: url(../img/covers/bg/coversbg_t@1x.webp);
-    }
-
-    @media (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-        .covers-container {
-            background-image: url(../img/covers/bg/coversbg_t@2x.webp);
-        }
+        background-image: image-set(
+          url(/img/7-covers/bg-tab@1x.webp) 1x,
+          url(/img/7-covers/bg-tab@2x.webp) 2x);
     }
 }
 @media only screen and (min-width: 1440px) {
     .covers-container {
-        background-image: url(../img/covers/bg/coversbg_d@1x.webp);
-    }
-
-    @media (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-        .covers-container {
-            background-image: url(../img/covers/bg/coversbg_d@2x.webp);
-        }
+        background-image: image-set(
+           url(/img/7-covers/bg-desk@1x.webp) 1x,
+           url(/img/7-covers/bg-desk@2x.webp) 2x);
     }
 }
 
@@ -104,30 +87,30 @@
     width: 100%;
 }
 
-.covers.onScreen .covers-set-img {
+.covers-section.onScreen .covers-set-img {
     white-space: nowrap;
     animation-duration: 50s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
 }
 
-.covers.onScreen .covers-set:nth-child(1) .covers-set-img {
+.covers-section.onScreen .covers-set:nth-child(1) .covers-set-img {
     animation-name: marqueeLine-left;
 }
 
-.covers.onScreen .covers-set:nth-child(2) .covers-set-img {
+.covers-section.onScreen .covers-set:nth-child(2) .covers-set-img {
     animation-name: marqueeLine-right;
 }
 
-.covers.onScreen .covers-set:nth-child(3) .covers-set-img {
+.covers-section.onScreen .covers-set:nth-child(3) .covers-set-img {
     animation-name: marqueeLine-left;
 }
 
-.covers.onScreen .covers-set:nth-child(4) .covers-set-img {
+.covers-section.onScreen .covers-set:nth-child(4) .covers-set-img {
     animation-name: marqueeLine-right;
 }
 
-.covers.onScreen .covers-set:nth-child(5) .covers-set-img {
+.covers-section.onScreen .covers-set:nth-child(5) .covers-set-img {
     animation-name: marqueeLine-left;
 }
 

@@ -5,7 +5,7 @@ import { Keyboard, Navigation } from 'swiper/modules';
 // slide-content-item
 const tags = ['#react', '#js', '#node js', '#git'];
 const description = 'Programming Across Borders: Ideas, Technologies, Innovations';
-const link ='https://zakhar-t.github.io/TeamProject_Portfolio_PG7/'
+const link ='https://alonko68.github.io/project-Portfolio/'
 const linkText = 'See project';
 const slidesContent = document.querySelectorAll('.projects-slide-content-js');
 
