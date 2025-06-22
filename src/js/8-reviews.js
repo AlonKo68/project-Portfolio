@@ -99,7 +99,7 @@ function markupReviews(arr) {
         <li class="reviews-card">
           <img class="reviews-img" src="${avatar_url}" 
             alt="${author}" width="48" height="48">
-          <h4 class="reviews-name">${author}</h4>
+          <h3 class="reviews-name">${author}</h3>
           <p class="typewriter reviews-text">${review}</p>
         </li>
       </div >`
