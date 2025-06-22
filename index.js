@@ -19,7 +19,7 @@ import{A as M,S as w,K as h,N as y,a as p,i as S,b as x}from"./assets/vendor-da0
         <li class="reviews-card">
           <img class="reviews-img" src="${n}" 
             alt="${e}" width="48" height="48">
-          <h4 class="reviews-name">${e}</h4>
+          <h3 class="reviews-name">${e}</h3>
           <p class="typewriter reviews-text">${r}</p>
         </li>
       </div >`).join("")}function K(t,e){t.style.opacity=0,new IntersectionObserver(r=>{r.forEach(o=>{if(o.isIntersecting){let l=function(){i<s.length&&(t.innerHTML+=s.charAt(i),i++,setTimeout(l,e))};if(t.dataset.typingStarted)return;t.dataset.typingStarted="true";const s=t.innerHTML;let i=0;t.innerHTML="",o.target.style.transition=`opacity ${e/1e3}s ease`,o.target.style.opacity=1,l()}})},{threshold:.5}).observe(t)}const a=document.body,z=document.querySelector(".work-together-form");p.defaults.baseURL="https://portfolio-js.b.goit.study/api";async function Q(t,e){return await p.post("/requests/",{email:t,comment:e})}z.addEventListener("submit",J);function J(t){t.preventDefault();const e=t.target,{userEmail:n,userComments:r}=e.elements;Q(n.value,r.value).then(o=>{const s=x.create(` 
