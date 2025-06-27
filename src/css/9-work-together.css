@@ -205,7 +205,7 @@ textarea:-webkit-autofill::first-line {
 }
 
 .form-btn:hover {
-  background-color: rgb(224, 55, 63);
+  background-color: #db242e;
 }
 
 @media screen and (min-width: 768px) {

@@ -59,7 +59,9 @@
     transition: transform 0.3s ease, color 0.3s ease; 
 }
 .letter-js:hover {
-    color: rgb(164, 11, 11);
+    color:chocolate;
+    transform: translateY(5px);
+
 }
 
 .header-nav-btn {
@@ -108,7 +110,8 @@
     font-size: 14px;
 }
 .order-btn:hover {
-        background-color: #E0373F;
+        background-color: #db242e;
+        
     }
 .order-btn:active {
     transform: scale(0.98);
@@ -263,7 +266,3 @@
     }
 }
 
-
-/* .no-scroll {
-    overflow: hidden;
-} */

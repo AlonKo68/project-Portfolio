@@ -95,14 +95,12 @@ async function fetchReviews() {
 function markupReviews(arr) {
   return arr
     .map(({ author, avatar_url, review }) =>
-      `<div class="swiper-slide">
-        <li class="reviews-card">
+      `<li class="reviews-card swiper-slide">
           <img class="reviews-img" src="${avatar_url}" 
-            alt="${author}" width="48" height="48">
+            alt="${author}" width="48" height="48" loading="lazy">
           <h3 class="reviews-name">${author}</h3>
           <p class="typewriter reviews-text">${review}</p>
-        </li>
-      </div >`
+        </li>`
     ).join('');
 }
 
